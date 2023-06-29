@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    dislpay:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background: url('file:///C:/Users/DELL/Downloads/Wallpaper.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.Logo{
+    font-size: 1cm;
+    color: white;
+    user-select: none;
+}
+.nav a{
+   position: relative;
+   font-size:.5cm ;
+   color: white;
+   text-decoration: none;
+   font-weight: 500;
+   margin-left: 40px;
+}
+.nav a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition:transform .5s;
+    transform-origin: right;
+}
+.nav a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+button{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: .5cm;
+    color: white;
+    font-weigth:500;
+    margin-left: 40px;
+    transition: .5s;
+}
+button:hover{
+background-color: white;
+color:black;
+}
+.wrapper{
+    margin-top: 200px;
+    margin-left: 500px;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper.form-box{
+    width: 100%;
+    height: 40px;
+
+}
+.form-box h2{
+    font-size: 1cm;
+    color: black;
+    text-align: center;
+}
+
+.input-box{
+    width: 100%;
+    height: 100%;
+    backdrop-filter:blur;
+    
+    border: none;
+    outline: none;
+
+}
+
+
